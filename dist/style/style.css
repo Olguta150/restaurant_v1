@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(/dist/images/piotr-szulawski-DCmUhk54F6M-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    backdrop-filter: blur(3.5px);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 100px;
+    background: #023047;
+    box-shadow: 0 2px 5px rgba(0, 0 , 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    color: rgb(234, 227, 227);
+    list-style: none;;
+    padding-right: 200px;
+    gap: 100px;
+}
+
+nav ul li {
+    font-size: 28px;
+    cursor: pointer;
+}
