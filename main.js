@@ -7,6 +7,32 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "home": () => (/* binding */ home)
+/* harmony export */ });
+function home() {
+    const container = document.getElementById('content');
+
+    const homePage = document.createElement('div');
+    homePage.classList.add('home');
+    homePage.innerHTML = `
+        <div class="heading">Welcome To Cip</div>
+        <div class="main">
+        <div class="description">Cip Restaurant specializes in delicious food featuring fresh ingredients and masterful preparation by the culinary team. Whether you're ordering a multi-course meal or grabbing a drink and pizza at the bar, Cip's lively, casual yet upscale atmosphere makes it perfect for dining with friends, family, clients and business associates.</div>
+        <img class="img" src="/dist/images/—Pngtree—luxury gold background thai pattern_2455373.jpg" alt="description-background">
+        </div>
+    `;
+
+    container.appendChild(homePage);
+}
+
+
+
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "nav": () => (/* binding */ nav)
 /* harmony export */ });
 function nav() {
@@ -29,27 +55,119 @@ function nav() {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "home": () => (/* binding */ home)
+/* harmony export */   "menu": () => (/* binding */ menu)
 /* harmony export */ });
-function home() {
+/* harmony import */ var _meals_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
+
+
+function menu() {
     const container = document.getElementById('content');
 
-    const homeBody = document.createElement('div');
-    homeBody.classList.add('home');
-    homeBody.innerHTML = `
-        <div class="heading">Welcome To Cip</div>
-        <div class="main">
-        <div class="description">Cip Restaurant specializes in delicious food featuring fresh ingredients and masterful preparation by the culinary team. Whether you're ordering a multi-course meal or grabbing a drink and pizza at the bar, Cip's lively, casual yet upscale atmosphere makes it perfect for dining with friends, family, clients and business associates.</div>
-        <img class="img" src="/dist/images/—Pngtree—luxury gold background thai pattern_2455373.jpg" alt="description-background">
+    const menuPage = document.createElement('div');
+    menuPage.classList.add('menu');
+
+    menuPage.innerHTML = `
+        <div class="title">Menu</div>
+        <div class="options">
+            <div id="meals" class="option">Meals</div>
+            <div id="desserts" class="option">Desserts</div>
+            <div id="drinks" class="option">Drinks</div>
         </div>
     `;
 
-    container.appendChild(homeBody);
+    container.appendChild(menuPage);
+    (0,_meals_menu__WEBPACK_IMPORTED_MODULE_0__.meals)();
+}
+
+
+
+
+
+
+
+{/* <div class="menu-grid">
+    <div class="item-">
+        <img src="" alt="item-image">
+        <div class="item-description"></div>
+        <div class="item-price"></div>
+    </div>
+</div> */}
+
+/***/ }),
+/* 4 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "meals": () => (/* binding */ meals)
+/* harmony export */ });
+function meals() {
+    const container = document.getElementById('content');
+
+    const mealsPage = document.createElement('div');
+    mealsPage.classList.add('meals-page');
+
+    mealsPage.innerHTML = `
+        <div class="menu-grid">
+            <div class="item">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Eggplant-Rollatini_EXPS_THCA19_41566_B08_07_1b-6.jpg?resize=696,696" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+            <div class="item">
+                <img src="" alt="item-image">
+                <div class="item-description"></div>
+                <div class="item-price"></div>
+            </div>
+        </div>
+    `;
+
+    container.appendChild(mealsPage);
 }
 
 
@@ -115,13 +233,16 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
 
 
 
-(0,_nav__WEBPACK_IMPORTED_MODULE_1__.nav)();
-(0,_home__WEBPACK_IMPORTED_MODULE_0__.home)();
+
+(0,_nav__WEBPACK_IMPORTED_MODULE_2__.nav)();
+// home();
+(0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)();
 })();
 
 /******/ })()
