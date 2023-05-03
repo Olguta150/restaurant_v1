@@ -4,6 +4,7 @@ function nav() {
     const navigation = document.createElement('nav');
     navigation.classList.add('nav');
     navigation.innerHTML = `
+        <div class="logo">Cip Restaurant</div>
         <ul>
             <li>Home</li>
             <li>Menu</li>
