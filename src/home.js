@@ -1,9 +1,9 @@
 function home() {
     const container = document.getElementById('content');
 
-    const homeBody = document.createElement('div');
-    homeBody.classList.add('home');
-    homeBody.innerHTML = `
+    const homePage = document.createElement('div');
+    homePage.classList.add('home');
+    homePage.innerHTML = `
         <div class="heading">Welcome To Cip</div>
         <div class="main">
         <div class="description">Cip Restaurant specializes in delicious food featuring fresh ingredients and masterful preparation by the culinary team. Whether you're ordering a multi-course meal or grabbing a drink and pizza at the bar, Cip's lively, casual yet upscale atmosphere makes it perfect for dining with friends, family, clients and business associates.</div>
@@ -11,7 +11,7 @@ function home() {
         </div>
     `;
 
-    container.appendChild(homeBody);
+    container.appendChild(homePage);
 }
 
 export { home };
