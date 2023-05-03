@@ -15,6 +15,7 @@ function nav() {
     const navigation = document.createElement('nav');
     navigation.classList.add('nav');
     navigation.innerHTML = `
+        <div class="logo">Cip Restaurant</div>
         <ul>
             <li>Home</li>
             <li>Menu</li>
@@ -23,6 +24,32 @@ function nav() {
     `;
 
     container.appendChild(navigation);
+}
+
+
+
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "home": () => (/* binding */ home)
+/* harmony export */ });
+function home() {
+    const container = document.getElementById('content');
+
+    const homeBody = document.createElement('div');
+    homeBody.classList.add('home');
+    homeBody.innerHTML = `
+        <div class="heading">Welcome To Cip</div>
+        <div class="main">
+        <div class="description">Cip Restaurant specializes in delicious food featuring fresh ingredients and masterful preparation by the culinary team. Whether you're ordering a multi-course meal or grabbing a drink and pizza at the bar, Cip's lively, casual yet upscale atmosphere makes it perfect for dining with friends, family, clients and business associates.</div>
+        <img class="img" src="/dist/images/—Pngtree—luxury gold background thai pattern_2455373.jpg" alt="description-background">
+        </div>
+    `;
+
+    container.appendChild(homeBody);
 }
 
 
@@ -88,10 +115,13 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 
 
-(0,_nav__WEBPACK_IMPORTED_MODULE_0__.nav)();
+
+(0,_nav__WEBPACK_IMPORTED_MODULE_1__.nav)();
+(0,_home__WEBPACK_IMPORTED_MODULE_0__.home)();
 })();
 
 /******/ })()
