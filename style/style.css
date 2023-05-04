@@ -7,13 +7,15 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background: url(/dist/images/piotr-szulawski-DCmUhk54F6M-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     backdrop-filter: blur(3.5px);
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -100,10 +102,11 @@ nav ul li:hover::after {
     padding: 50px 30px;
 }
 
+
 .menu .title {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     padding: 30px 0;
     font-weight: 700;
 }
@@ -127,28 +130,38 @@ nav ul li:hover::after {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
     grid-template-rows: repeat(auto-fit, 500px);
-    gap: 30px;
-    padding-top: 50px;
+    gap: 35px;
+    padding: 100px 0 100px;
 }
 
 .menu-grid .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 500px; */
     height: 500px;
-    border: 1px solid red;
     padding: 20px 0;
+    background: #fff;
+    transform: scale(1);
+    transition: all ease-in-out 0.3s;
+}
+
+.menu-grid .item:hover {
+    transform: scale(1.1);
 }
 
 .menu-grid .item img {
     width: 85%;
     height: 65%;
-    background: green;
 }
 
-.menu-grid .item img .item-description {
-    background: blue;
+.menu-grid .item .item-description, .menu-grid .item .item-price {
+    /* background: blue; */
+    margin-top: 30px;
+    padding: 10px 30px 0;
+    font-size: 23px;
+    font-family: 'Libre Baskerville', serif;
 }
 
-.menu-grid .item img
+.menu-grid .item .item-price {
+    font-weight: 700;
+}
