@@ -1,4 +1,6 @@
+import { desserts } from "./desserts-menu";
 import { meals } from "./meals-menu";
+import { drinks } from "./drinks-menu";
 
 function menu() {
     const container = document.getElementById('content');
@@ -16,7 +18,32 @@ function menu() {
     `;
 
     container.appendChild(menuPage);
-    meals();
+
+    // const mealsOption = document.getElementById('meals');
+    // const dessertsOption = document.getElementById('desserts');
+    // const drinksOption = document.getElementById('drinks');
+
+    // // meals();
+
+    // mealsOption.addEventListener('click', meals);
+    // dessertsOption.addEventListener('click', desserts);
+    // drinksOption.addEventListener('click', drinks);
+
+    // document.addEventListener('click', (e) => {
+    //     console.log(e);
+    //     if(e === mealsOption) meals()
+    //     if(e === dessertsOption) desserts()
+    //     if(e === drinksOption) drinks()
+    // })
+
+    // mealsOption.onclick = () => meals();
+    // dessertsOption.onclick = () => desserts();
+    // drinksOption.onclick = () => drinks();
+    // console.log(mealsOption, dessertsOption, drinksOption);
+
+    // meals();
+    // desserts();
+    // drinks();
 }
 
 export { menu };
