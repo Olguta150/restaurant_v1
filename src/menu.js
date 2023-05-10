@@ -1,9 +1,15 @@
-import { desserts } from "./desserts-menu";
-import { meals } from "./meals-menu";
-import { drinks } from "./drinks-menu";
+import { desserts } from "./menu-components/desserts-menu";
+import { meals } from "./menu-components/meals-menu";
+import { drinks } from "./menu-components/drinks-menu";
+import { nav } from "./nav";
 
 function menu() {
     const container = document.getElementById('content');
+    // meals();
+
+    container.replaceChildren();
+
+    nav();
 
     const menuPage = document.createElement('div');
     menuPage.classList.add('menu');
@@ -29,12 +35,12 @@ function menu() {
     // dessertsOption.addEventListener('click', desserts);
     // drinksOption.addEventListener('click', drinks);
 
-    // document.addEventListener('click', (e) => {
-    //     console.log(e);
-    //     if(e === mealsOption) meals()
-    //     if(e === dessertsOption) desserts()
-    //     if(e === drinksOption) drinks()
-    // })
+    document.addEventListener('click', (e) => {
+        console.log("the other e: ", e.target.id);
+        if(e.target.id === 'meals') meals()
+        if(e.target.id === 'desserts') desserts()
+        if(e.target.id === 'drinks') drinks()
+    })
 
     // mealsOption.onclick = () => meals();
     // dessertsOption.onclick = () => desserts();
@@ -52,10 +58,10 @@ export { menu };
 
 
 
-{/* <div class="menu-grid">
+/* <div class="menu-grid">
     <div class="item-">
         <img src="" alt="item-image">
         <div class="item-description"></div>
         <div class="item-price"></div>
     </div>
-</div> */}
+</div> */

@@ -6,9 +6,9 @@ function nav() {
     navigation.innerHTML = `
         <div class="logo">Cip Restaurant</div>
         <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Contact</li>
+            <li id="homeBtn">Home</li>
+            <li id="menuBtn">Menu</li>
+            <li id="contactBtn">Contact</li>
         </ul>
     `;
 
