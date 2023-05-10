@@ -57,7 +57,7 @@ nav ul li:hover::after {
     width: 100%;
 }
 
-.logo {
+#logo {
     font-family: 'Braah One', sans-serif;
     color:rgb(234, 227, 227);
     font-size: 30px;
