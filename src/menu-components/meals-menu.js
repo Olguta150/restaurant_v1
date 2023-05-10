@@ -7,13 +7,6 @@ function meals() {
     container.replaceChildren();
     nav();
     menu();
-    // const mealsReplace = document.querySelector('.meals-page');
-    // const dessertsReplace = document.querySelector('.desserts-page');
-    // const drinksReplace = document.querySelector('.drinks-page');
-
-    // container.replaceChildren(mealsReplace);
-    // container.replaceChildren(dessertsReplace);
-    // container.replaceChildren(drinksReplace);
 
     const mealsPage = document.createElement('div');
     mealsPage.classList.add('meals-page');
