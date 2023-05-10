@@ -8,17 +8,16 @@ import { drinks } from "./menu-components/drinks-menu";
 
 // menu();
 
-window.addEventListener('load', () => {
-    nav();
-    home();
-})
+nav();
+home();
 
 const switchModule = (function() {
     const container = document.getElementById('content');
+
     container.addEventListener('click', (e) => {
         console.log("e: ", e.target.id);
 
-        if(e.target.id === 'homeBtn') {
+        if(e.target.id === 'homeBtn' || e.target.id === 'logo') {
             home();
         } else if(e.target.id === 'menuBtn') {
             menu();
